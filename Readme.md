@@ -1,4 +1,4 @@
-# Starting Point - LinkedIn's Filters suck.
+# Starting Point - LinkedIn's Filter sucks.
 
 While searching for an internship position, I came across lots of unrelated positions. After realizing how bad LinkedIn job search filtering is,   
 I decided to do my own filtering. In the following section of the README page, you can find insights, my steps, and improvements of the script during the project.
