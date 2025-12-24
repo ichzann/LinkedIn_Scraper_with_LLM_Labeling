@@ -15,8 +15,13 @@ Once everything was running without an error, I tried to fine-tune the prompt, b
 
 During fine-tuning, I realized some "mistakes" that affected the quality of the LLM's output. I was asking AI to rate the company based on size, the location of the position based on the "beauty" of the location, and the relevance to Data Science. Which wasn't that optimal for an LLM, especially for a small model.
 
-After realizing that the LLM wasn't understanding what I meant by "beautifulness" and failing at rating things since it had no extensive comparison, I decided to only check whether the position fits my requirements or not.
+After realizing that the LLM wasn't understanding what I meant by "beautifulness" and failing at rating things since it had no extensive comparison, I decided to only check whether the position fits my requirements or not with a simple return "recejted" or "accepted".
 
 # Current State
 
-Currently, I am trying to improve the labeling by changing the prompt.
+Currently, I am trying to improve the labeling by changing the prompt. I was aiming a high Recall, however I'am not happy with the results, therefore I'll focuse more on precision. Besides, I should send the links in a better format, which should make it able to click easier. 
+
+## Recent Updates: 
+-> I scheduled a task on an old computer, which triggers the script once a day. -> Since some job listings may appear multiple times, the script checks whether the job was already seen by storing a text file with the links of scraped job listings. The LLM is only used if the job (i.e., the link) is not in that file.
+-> Since some job listings may appear mutlible times, the script checks, wahter the job is already seen by storing a text file with the links of scraped job listings. LLM is only used, if the job (aka. the link) is not in that file. 
+
